@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter, Outfit } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+console.log(inter)
 
 export default function Home() {
   return (
