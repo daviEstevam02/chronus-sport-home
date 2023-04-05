@@ -19,7 +19,8 @@ module.exports = {
           'dark': '#0F737F',
           'medium': '#00E4FF',
           'light': '#82EDFA',
-          'lightest': '#B4F5FD'
+          'lightest': '#B4F5FD',
+          '500': '#3C99FC'
         },
         tertiary: {
           'darkest': '#074E37',
@@ -33,8 +34,14 @@ module.exports = {
           'dark': '#737373',
           'medium': '#A3A3A3',
           'light': '#EEEEEE',
-          'lightest': '#FFFFFF'
+          'lightest': '#FFFFFF',
+          '500': '#31344C'
         }, 
+        header:{
+          primary:{
+            'darkest': '#0D102D'
+          }
+        },
         support: {
           positive: {
             'darkest': '#13420F',
