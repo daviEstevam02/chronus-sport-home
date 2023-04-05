@@ -2,6 +2,8 @@ import { Header } from '../components/Header/Header'
 import { Inter, Outfit } from 'next/font/google'
 import Image from 'next/legacy/image'
 
+import Footer from '@/components/Footer'
+
 import { Button } from '@/components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -10,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-full h-full bg-primary-darkest ">
+      <div className="w-full h-screen">
         <div className="container"></div>
       </div>
 
@@ -85,6 +87,7 @@ export default function Home() {
               LANÇAMENTOS
             </h1>
          </div> */}
+      <Footer />
     </>
   )
 }
