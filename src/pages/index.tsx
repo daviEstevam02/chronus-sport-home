@@ -2,19 +2,19 @@ import { Header } from '../components/Header/Header'
 import { Inter, Outfit } from 'next/font/google'
 import Image from 'next/legacy/image'
 
-import principalImg from '../assets/principalImg.png'
 import { Button } from '@/components/Button'
-
-import scoutBackground from '../assets/scount.png'
-import scountBanner from '../assets/scoutbanner.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='h-full bg-primary-darkest '>
+    <>
       <Header />
-      <div className='flex items-center mt-40 ml-auto mr-auto 2xl:w-3/6 px-80 Content-Section-1 lg:px-20'>
+      <div className="w-full h-full bg-primary-darkest ">
+        <div className="container"></div>
+      </div>
+
+      {/* <div className='flex items-center mt-40 ml-auto mr-auto 2xl:w-3/6 px-80 Content-Section-1 lg:px-20'>
         <div className='Content'>
          <div className='Title'>
             <h1
@@ -47,13 +47,13 @@ export default function Home() {
          </div>
         </div>
         <div className='mt-32 principal-banner lg:mt-0'>
-          <Image src={principalImg} alt="" className='w-[800px]' />
+          <Image layout='fill' src='/images/principal-image.png' alt="" className='w-[800px]' />
         </div>
       </div>
 
       <div className='relative flex items-center px-32 mt-28 2xl:mt-96 Content-section-2 lg:px-10'>
-            <Image src={scoutBackground} alt="Scount" />
-            <Image src={scountBanner} alt="Scount" className='absolute w-3/6 '/>
+            <Image layout='fill' src='/images/scount.png' alt="Scount" />
+            <Image layout='fill' src='/images/scount-banner.png' alt="Scount" className='absolute w-3/6 '/>
 
           <div className=''>
             <h1
@@ -84,8 +84,7 @@ export default function Home() {
             >
               LANÇAMENTOS
             </h1>
-         </div>
-
-    </div>
+         </div> */}
+    </>
   )
 }

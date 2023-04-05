@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  margin: 0  
-} 
-
 @layer components {
   .gradient-1 {
-    background: linear-gradient(322.68deg, #803EB4 36.47%, #4F25CC 92.31%);
+    background: linear-gradient(322.68deg, #803eb4 36.47%, #4f25cc 92.31%);
   }
 
   .gradient-2 {
-    background: radial-gradient(72.67% 72.67% at 0% 5.3%, #152A9D 41.67%, #131740 100%)
+    background: radial-gradient(
+      72.67% 72.67% at 0% 5.3%,
+      #152a9d 41.67%,
+      #131740 100%
+    );
   }
 
   .gradient-3 {
-    background: linear-gradient(90deg, #0D0035 0%, rgba(13, 1, 54, 0) 50%);
+    background: linear-gradient(90deg, #0d0035 0%, rgba(13, 1, 54, 0) 50%);
   }
 
   .gradient-4 {
-    background: linear-gradient(272.3deg, #4F25CC -0.63%, #803EB4 99.75%);
+    background: linear-gradient(272.3deg, #4f25cc -0.63%, #803eb4 99.75%);
   }
 }
