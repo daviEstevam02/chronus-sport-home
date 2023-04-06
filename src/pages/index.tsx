@@ -7,7 +7,6 @@ import Footer from '@/components/Footer'
 import { Button } from '@/components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
-console.log(inter)
 
 export default function Home() {
   return (
@@ -15,78 +14,82 @@ export default function Home() {
       <Header />
       <div className="w-full h-full pt-9 pb-52 bg-primary-darkest">
         <div className="container px-3 mx-auto my-0">
-          <div className="flex items-center justify-between section-1">
-            <div>
-              <div className="flex flex-col mb-2 Title">
-                <h1 className="font-bold text-md text-gray-light">
+          <div className="grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start">
+            <div className="col-span-2 lg:col-span-6">
+              <div className="flex flex-col mb-2 Title lg:mt-12">
+                <h1 className="font-bold text-md md:text-4xl lg:text-[48px] xl:text-[58px] text-gray-light">
                   COLECIONÁVEIS
                 </h1>
-                <h2 className="text-sm font-bold text-secondary-medium">
+                <h2 className="text-sm font-bold md:text-4xl lg:text-[45px] md:mt-2  text-secondary-medium">
                   EXCLUSIVOS
                 </h2>
               </div>
 
-              <div className="text-sm font-normal text-gray-light max-w-[195px]">
-                <p className="text-sm">
+              <div className="text-sm font-normal text-gray-light lg:mt-6">
+                <p className="text-sm md:text-base">
                   CHRONUS Sports é a sua chance de possuir, vender e negociar
                   NFTs colecionáveis digitais oficiais dos melhores atletas
                   profissionais do Mundo todo.
                 </p>
+                <div className="flex items-center font-normal mt-9">
+                  <Button className="h-10 md:h-[56px] gradient-4 md:text-base min-w-[170px] text-gray-light rounded-2xl">
+                    EXPLORE
+                  </Button>
+
+                  <Button className="h-10 md:h-[56px] md:text-base min-w-[170px] ml-4 md:ml-[30px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                    CADASTRE-SE
+                  </Button>
+                </div>
               </div>
             </div>
-            <div>
+            <div className="relative col-start-3 col-end-5 ml-2 lg:col-start-7 lg:col-end-13">
               <Image
                 src="/images/principal-image.png"
-                width={200}
-                height={186}
+                width={1920}
+                height={1080}
                 alt="Imagem principal"
               />
             </div>
           </div>
-          <div className="flex items-center font-normal mt-9 button-swap">
-            <Button className="px-6 py-2 gradient-4 min-w-[171px] text-gray-light rounded-2xl">
-              EXPLORE
-            </Button>
 
-            <Button className="px-6 py-2 min-w-[171px] ml-2 bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
-              CADASTRE-SE
-            </Button>
-          </div>
-
-          <div className="mt-10 section-2">
-            <div>
+          <div
+            className="items-center mt-10 md:flex section-2"
+            style={{
+              backgroundImage: 'url(/images/scount.png)',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'top',
+              backgroundSize: 'contain',
+            }}
+          >
+            <div className="relative w-full">
               <Image
+                style={{ borderRadius: 122 }}
                 src="/images/scount-banner.png"
-                width={357}
-                height={367}
+                width={1920}
+                height={1920}
                 alt="Scount Banner"
               />
             </div>
-            <div>
-              <h1 className="font-bold text-gray-light text-md">
-                {' '}
-                SCOUNT COMBINE{' '}
-              </h1>
-            </div>
-            <div className="mt-2 text-sm text-gray-light">
-              <p>
+
+            <div className="mt-2 text-gray-light">
+              <h2 className="font-extrabold md:text-6xl text-gray-light text-md">
+                SCOUNT COMBINE
+              </h2>
+              <p className="mt-2 text-base md:mt-6">
                 Acompanhe o desempenho do seu atleta favorito, com NFTs
                 dinâmicos e adicione à sua Wallet os ativos digitais de cada
                 temporada. Invista e colecione a história. Comece agora, é
                 rápido e fácil.
               </p>
-            </div>
-            <div className="mt-4 button-wrapper">
-              <Button className="px-6 py-2 gradient-4 min-w-[150px] text-gray-light rounded-2xl">
-                EXPLORE
+
+              <Button className="h-[40px] md:h-[53px] mt-4 md:mt-14 min-w-[171px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                CADASTRE-SE
               </Button>
             </div>
           </div>
-
           <div className="text-center mt-36">
             <h1 className="mt-8 font-bold text-gray-light">LANÇAMENTOS</h1>
           </div>
-
           <div className="mt-16 text-center ">
             <h1 className="mt-8 font-bold text-gray-light">RECURSOS</h1>
 
@@ -169,7 +172,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="mt-20">
             <div>
               <Image
@@ -205,13 +207,11 @@ export default function Home() {
               </Button>
             </div>
           </div>
-
           <div className="mt-40">
             <h1 className="mt-8 font-bold text-center text-gray-light">
               MODALIDADES
             </h1>
           </div>
-
           <div className="mt-24">
             <h1 className="mt-8 font-bold text-center text-gray-light">
               NEWSLETTER
@@ -227,7 +227,6 @@ export default function Home() {
               />
             </div>
           </div>
-
           <div className="mt-20 text-center">
             <h1 className="mt-8 font-bold text-center text-gray-light">
               PARCEIROS
