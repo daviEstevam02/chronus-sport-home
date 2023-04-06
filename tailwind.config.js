@@ -2,6 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      sm: '390px',
+      md: '600px',
+      lg: '768px',
+      xl: '1024px',
+      '2xl': '1170px',
+    },
     extend: {
       colors: {
         'button-transparent': 'rgba(255,255,255,0.15)',
@@ -69,8 +76,8 @@ module.exports = {
         screens: {
           sm: '390px',
           md: '600px',
-          lg: '1024px',
-          xl: '1240px',
+          lg: '768px',
+          xl: '1024px',
           '2xl': '1170px',
         },
       },
