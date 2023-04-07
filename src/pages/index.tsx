@@ -14,41 +14,43 @@ export default function Home() {
       <Header />
       <div className="w-full h-full pt-9 pb-52 bg-primary-darkest">
         <div className="container px-3 mx-auto my-0">
-          <div className="relative grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start ">
-            <div className="col-span-2 lg:col-span-6 lg:mt-52 ">
-              <div className="flex flex-col mb-2">
-                <h1 className="font-black text-md md:text-4xl lg:text-[48px] xl:text-[58px] text-gray-light">
+          <div className="relative flex flex-col justify-between">
+            <div className="flex">
+              <div className="max-w-[50%] md:w-full flex flex-col mb-10 xl:justify-center">
+                <h1 className="font-black text-base md:text-4xl lg:text-[48px] xl:text-[58px] text-gray-light">
                   COLECIONÁVEIS
                 </h1>
                 <h2 className="text-sm font-black md:text-4xl lg:text-[45px] md:mt-2  text-secondary-medium">
                   EXCLUSIVOS
                 </h2>
-              </div>
 
-              <div className="text-sm font-normal text-gray-light lg:mt-6">
-                <p className="text-sm md:text-base">
-                  CHRONUS Sports é a sua chance de possuir, vender e negociar
-                  NFTs colecionáveis digitais oficiais dos melhores atletas
-                  profissionais do Mundo todo.
-                </p>
-                <div className="flex items-center font-normal mt-9">
-                  <Button className="h-10 md:h-[56px] gradient-4 md:text-base min-w-[170px] text-gray-light rounded-2xl">
+                <div className="mt-2 font-normal text-gray-light lg:mt-6">
+                  <p className="text-xs leading-5 md:text-base">
+                    CHRONUS Sports é a sua chance de possuir, vender e negociar
+                    NFTs colecionáveis digitais oficiais dos melhores atletas
+                    profissionais do Mundo todo.
+                  </p>
+                </div>
+
+                <div className="absolute md:static flex items-center w-full font-normal bottom-[-20px] mt-9">
+                  <Button className="h-10 md:h-[56px] gradient-4 md:text-base max-w-[170px] w-full text-gray-light rounded-2xl">
                     EXPLORE
                   </Button>
 
-                  <Button className="h-10 md:h-[56px] md:text-base min-w-[170px] ml-4 md:ml-[30px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                  <Button className="h-10 md:h-[56px] md:text-base max-w-[170px] w-full ml-4 md:ml-[30px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
                     CADASTRE-SE
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="w-full h-full col-start-3 col-end-5 ml-2 max-h-52 lg:max-h-fit lg:col-start-7 lg:col-end-13">
-              <Image
-                src="/images/principal-image.png"
-                width={563}
-                height={563}
-                alt="Imagem principal"
-              />
+
+              <div className="w-full h-fit">
+                <Image
+                  src="/images/principal-image.png"
+                  width={563}
+                  height={563}
+                  alt="Imagem principal"
+                />
+              </div>
             </div>
           </div>
 
@@ -203,15 +205,15 @@ export default function Home() {
 
             <div className="w-full md:flex-grow md:flex md:flex-col md:basis-0">
               <div className="w-[280px] md:w-full mt-3">
-                <p className="font-bold leading-10 text-gray-light md:text-5xl">
+                <p className="font-bold md:leading-10 text-gray-light md:text-5xl">
                   JÁ IMAGINOU{' '}
-                  <span className="leading-10 text-secondary-medium">
+                  <span className="md:leading-10 text-secondary-medium">
                     GANHAR VIAGENS
                   </span>{' '}
                   E DIVERSOS OUTROS PRÊMIOS?
                 </p>
               </div>
-              <div className="w-[358px] mt-2">
+              <div className="w-[358px] md:w-full mt-2">
                 <p className="text-sm font-normal text-gray-light">
                   Uma enorme variedade de experiências atreladas aos NFTs
                   esportivos mais procurados. Compre colecionáveis raros e
@@ -220,11 +222,11 @@ export default function Home() {
               </div>
 
               <div className="flex items-center w-full font-normal button-swap mt-7">
-                <Button className="px-6 py-2 gradient-4 min-w-[171px] text-gray-light rounded-2xl">
+                <Button className="h-10 md:h-[56px] gradient-4 md:text-base max-w-[170px] w-full text-gray-light rounded-2xl">
                   EXPLORE
                 </Button>
 
-                <Button className="px-6 py-2 min-w-[171px] ml-2 bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                <Button className="h-10 md:h-[56px] md:text-base max-w-[170px] w-full ml-4 md:ml-[30px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
                   CADASTRE-SE
                 </Button>
               </div>
