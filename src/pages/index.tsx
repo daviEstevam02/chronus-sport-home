@@ -14,6 +14,7 @@ export default function Home() {
       <Header />
       <div className="w-full h-full pt-9 pb-52 bg-primary-darkest">
         <div className="container px-3 mx-auto my-0">
+
           <div className="grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start">
             <div className="col-span-2 lg:col-span-6">
               <div className="flex flex-col mb-2 Title lg:mt-12">
@@ -53,7 +54,7 @@ export default function Home() {
           </div>
 
           <div
-            className="items-center mt-10 md:flex section-2"
+            className="mt-10 md:flex section-2 lg:gap-5 lg:grid-cols-12 lg:items-start"
             style={{
               backgroundImage: 'url(/images/scount.png)',
               backgroundRepeat: 'no-repeat',
@@ -61,19 +62,18 @@ export default function Home() {
               backgroundSize: 'contain',
             }}
           >
-            <div className="relative w-full">
+            <div className="relative w-full col-span-2 lg:col-span-5">
               <Image
-                style={{ borderRadius: 122 }}
-                src="/images/scount-banner.png"
+                src="/images/scout-banner.png"
                 width={1920}
                 height={1920}
                 alt="Scount Banner"
               />
             </div>
 
-            <div className="mt-2 text-gray-light">
-              <h2 className="font-extrabold md:text-6xl text-gray-light text-md">
-                SCOUNT COMBINE
+            <div className="grid col-start-3 col-end-5 mt-2 ml-2 text-gray-light lg:col-start-7 lg:col-end-13">
+              <h2 className="font-extrabold md:text-4xl lg:text-6xl text-gray-light text-md md:max-w-[300px]">
+                SCOUT COMBINE
               </h2>
               <p className="mt-2 text-base md:mt-6">
                 Acompanhe o desempenho do seu atleta favorito, com NFTs
@@ -82,29 +82,34 @@ export default function Home() {
                 rápido e fácil.
               </p>
 
-              <Button className="h-[40px] md:h-[53px] mt-4 md:mt-14 min-w-[171px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
-                CADASTRE-SE
-              </Button>
+              <div>
+                <Button className="h-[40px] md:h-[53px] mt-4 md:mt-14 min-w-[171px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                  CADASTRE-SE
+                </Button>
+              </div>
             </div>
           </div>
-          <div className="text-center mt-36">
-            <h1 className="mt-8 font-bold text-gray-light">LANÇAMENTOS</h1>
+          <div 
+            className="w-full mt-10 section-2"
+            style={{
+              backgroundImage: 'url(/images/lancamentos-bg.svg)',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'top',
+              backgroundSize: 'cover',
+            }}
+          >
+            <h2 className="mt-8 font-extrabold text-center text-gray-light">LANÇAMENTOS</h2>
           </div>
-          <div className="mt-16 text-center ">
-            <h1 className="mt-8 font-bold text-gray-light">RECURSOS</h1>
 
-            <div>
-              <Image
-                src="/images/recursos.png"
-                width={389}
-                height={320}
-                alt="Recursos"
-              />
+          <div>
+            <div className='grid grid-cols-4 lg:gap-5 lg:grid-cols-12 lg:items-start'>
+              <h2 className="mt-8 font-bold text-gray-light lg:text-[48px] lg:col-start-2 lg:col-end-6">RECURSOS</h2>
             </div>
-
-            <div>
+            <div className="grid grid-cols-4 mt-16 Recursos lg:gap-5 lg:grid-cols-12 lg:items-start">
+        
+            <div className='grid col-span-5 lg:col-start-2 lg:col-end-6'>
               <div className="flex justify-between mt-5">
-                <div>
+                <div >
                   <Image
                     src="/icons/ic-be-atlet.svg"
                     width={77}
@@ -114,15 +119,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-left w-[259px]">
-                  <h1 className="font-bold text-secondary-medium">
-                    SEJA UM ATLETA
-                  </h1>
+                  <h2 className="font-bold text-secondary-medium">
+                      NFT’S DINÂMICOS
+                  </h2>
 
                   <p className="mt-4 text-sm text-gray-light">
-                    No CHRONUS Sports, seja você atleta amador ou profissional,
-                    ao realizar o seu cadastro nós iremos validar suas
-                    informações e categorizar o seu perfil dentro da plataforma.
-                    Cadastre-se e aproveite todos os nossos recursos.
+                    Colecionáveis exclusivos e cheios de recursos e informações. Colecione a história dos seus atleta favoritos. 
                   </p>
                 </div>
               </div>
@@ -138,9 +140,9 @@ export default function Home() {
                 </div>
 
                 <div className="text-left w-[259px]">
-                  <h1 className="font-bold text-secondary-medium">
+                  <h2 className="font-bold text-secondary-medium">
                     SCOUNT COMBINE
-                  </h1>
+                  </h2>
 
                   <p className="mt-4 text-sm text-gray-light">
                     NFT’s cheios de recursos para você colecionar, investir e se
@@ -160,9 +162,9 @@ export default function Home() {
                 </div>
 
                 <div className="text-left w-[259px]">
-                  <h1 className="font-bold text-secondary-medium">
+                  <h2 className="font-bold text-secondary-medium">
                     CARTEIRA DIGITAL
-                  </h1>
+                  </h2>
 
                   <p className="mt-4 text-sm text-gray-light">
                     NFT’s cheios de recursos para você colecionar, investir e se
@@ -171,7 +173,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className='col-start-1 col-end-5 lg:col-start-6 lg:col-end-13'>
+              <Image
+                src="/images/recursos-banner.png"
+                width={1050}
+                height={794}
+                alt="Recursos"
+              />
+            </div>
+          
           </div>
+          </div>
+
+          
+
           <div className="mt-20">
             <div>
               <Image
@@ -183,11 +198,11 @@ export default function Home() {
             </div>
 
             <div className="w-[280px]">
-              <h1 className="font-bold text-gray-light">
+              <h2 className="font-bold text-gray-light">
                 JÁ IMAGINOU{' '}
                 <span className="text-secondary-medium">GANHAR</span> VIAGENS E
                 DIVERSOS OUTROS PRÊMIOS?
-              </h1>
+              </h2>
             </div>
             <div className="w-[358px] mt-2">
               <p className="text-sm font-normal text-gray-light">
@@ -208,14 +223,14 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-40">
-            <h1 className="mt-8 font-bold text-center text-gray-light">
+            <h2 className="mt-8 font-bold text-center text-gray-light">
               MODALIDADES
-            </h1>
+            </h2>
           </div>
           <div className="mt-24">
-            <h1 className="mt-8 font-bold text-center text-gray-light">
+            <h2 className="mt-8 font-bold text-center text-gray-light">
               NEWSLETTER
-            </h1>
+            </h2>
             <p className="text-sm text-center mt-9 text-gray-light">
               Inscreva-se na nossa newsletter para ficar por dentro de todas as
               novidades, lançamentos, drops e dicas do Chronus Sports
@@ -228,9 +243,9 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-20 text-center">
-            <h1 className="mt-8 font-bold text-center text-gray-light">
+            <h2 className="mt-8 font-bold text-center text-gray-light">
               PARCEIROS
-            </h1>
+            </h2>
 
             <p className="mt-10 font-normal text-gray-medium">
               Parceiros e Clientes da CHRONUS Plataform
