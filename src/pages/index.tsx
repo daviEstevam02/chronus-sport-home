@@ -14,7 +14,6 @@ export default function Home() {
       <Header />
       <div className="w-full h-full pt-9 pb-52 bg-primary-darkest">
         <div className="container px-3 mx-auto my-0">
-
           <div className="grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start">
             <div className="col-span-2 lg:col-span-6">
               <div className="flex flex-col mb-2 Title lg:mt-12">
@@ -62,7 +61,7 @@ export default function Home() {
               backgroundSize: 'contain',
             }}
           >
-            <div className="relative w-full col-span-2 lg:col-span-5">
+            <div className="relative w-full col-span-2 lg:">
               <Image
                 src="/images/scout-banner.png"
                 width={1920}
@@ -89,7 +88,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div 
+          <div
             className="w-full mt-10 section-2"
             style={{
               backgroundImage: 'url(/images/lancamentos-bg.svg)',
@@ -98,94 +97,98 @@ export default function Home() {
               backgroundSize: 'cover',
             }}
           >
-            <h2 className="mt-8 font-extrabold text-center text-gray-light">LANÇAMENTOS</h2>
+            <h2 className="mt-8 font-extrabold text-center text-gray-light">
+              LANÇAMENTOS
+            </h2>
           </div>
 
-          <div>
-            <div className='grid grid-cols-4 lg:gap-5 lg:grid-cols-12 lg:items-start'>
-              <h2 className="mt-8 font-bold text-gray-light lg:text-[48px] lg:col-start-2 lg:col-end-6">RECURSOS</h2>
+          <div id="recursos-section" className="mt-2 md:block">
+            <div className="text-center md:text-left text-gray-light">
+              <h2 className="text-base font-black md:text-6xl text-gray-light">
+                RECURSOS
+              </h2>
             </div>
-            <div className="grid grid-cols-4 mt-16 Recursos lg:gap-5 lg:grid-cols-12 lg:items-start">
-        
-            <div className='grid col-span-5 lg:col-start-2 lg:col-end-6'>
-              <div className="flex justify-between mt-5">
-                <div >
-                  <Image
-                    src="/icons/ic-be-atlet.svg"
-                    width={77}
-                    height={95}
-                    alt="Seja um atleta"
-                  />
-                </div>
 
-                <div className="text-left w-[259px]">
-                  <h2 className="font-bold text-secondary-medium">
-                      NFT’S DINÂMICOS
-                  </h2>
-
-                  <p className="mt-4 text-sm text-gray-light">
-                    Colecionáveis exclusivos e cheios de recursos e informações. Colecione a história dos seus atleta favoritos. 
-                  </p>
-                </div>
+            <div className="h-full md:relative md:flex md:flex-col xl:flex-row md:items-center xl:mt-10">
+              <div className="xl:absolute md:max-w-[694px] md:mt-10 right-0">
+                <Image
+                  src="/images/recursos-banner.png"
+                  width={1050}
+                  height={794}
+                  alt="Recursos"
+                />
               </div>
 
-              <div className="flex justify-between mt-14">
-                <div>
-                  <Image
-                    src="/icons/ic-scount.svg"
-                    width={77}
-                    height={95}
-                    alt="Scount Combine"
-                  />
+              <div className="md:flex md:flex-col xl:max-w-[50%] xl:mt-14">
+                <div className="flex gap-5 md:gap-10">
+                  <div className="">
+                    <Image
+                      src="/icons/ic-be-atlet.svg"
+                      width={77}
+                      height={95}
+                      alt="Seja um atleta"
+                    />
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="font-black md:text-5xl text-secondary-medium">
+                      SEJA UM ATLETA
+                    </h3>
+                    <p className="mt-4 text-sm font-normal text-gray-light">
+                      No CHRONUS Sports, seja você atleta amador ou
+                      profissional, ao realizar o seu cadastro nós iremos
+                      validar suas informações e categorizar o seu perfil dentro
+                      da plataforma. Cadastre-se e aproveite todos os nossos
+                      recursos.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="text-left w-[259px]">
-                  <h2 className="font-bold text-secondary-medium">
-                    SCOUNT COMBINE
-                  </h2>
+                <div className="flex gap-5 mt-14 md:gap-10 md:mt-10">
+                  <div className="">
+                    <Image
+                      src="/icons/ic-scount.svg"
+                      width={77}
+                      height={95}
+                      alt="Scount Combine"
+                    />
+                  </div>
 
-                  <p className="mt-4 text-sm text-gray-light">
-                    NFT’s cheios de recursos para você colecionar, investir e se
-                    destacar dentro do mercado desportivo.
-                  </p>
+                  <div className="flex-1">
+                    <h3 className="font-black md:text-5xl text-secondary-medium">
+                      SCOUT COMBINE
+                    </h3>
+                    <p className="mt-4 text-sm font-normal text-gray-light">
+                      NFT’s cheios de recursos para você colecionar, investir e
+                      se destacar dentro do mercado desportivo.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex justify-between mt-14">
-                <div>
-                  <Image
-                    src="/icons/ic-digital-wallet.svg"
-                    width={77}
-                    height={95}
-                    alt="Carteira Digital"
-                  />
-                </div>
+                <div className="flex gap-5 mt-14 md:gap-10 md:mt-10">
+                  <div className="">
+                    <Image
+                      src="/icons/ic-digital-wallet.svg"
+                      width={77}
+                      height={95}
+                      alt="Carteira Digital"
+                    />
+                  </div>
 
-                <div className="text-left w-[259px]">
-                  <h2 className="font-bold text-secondary-medium">
-                    CARTEIRA DIGITAL
-                  </h2>
-
-                  <p className="mt-4 text-sm text-gray-light">
-                    NFT’s cheios de recursos para você colecionar, investir e se
-                    destacar dentro do mercado desportivo.
-                  </p>
+                  <div className="flex-1">
+                    <h3 className="font-black md:text-5xl text-secondary-medium">
+                      CARTEIRA DIGITAL
+                    </h3>
+                    <p className="mt-4 text-sm font-normal text-gray-light">
+                      Crie sua Wallet de forma simples e rápida, sem vínculos
+                      com CRIPTOMOEDAS e comece a investir nos melhores NFTs
+                      esportivos do Mundo.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className='col-start-1 col-end-5 lg:col-start-6 lg:col-end-13'>
-              <Image
-                src="/images/recursos-banner.png"
-                width={1050}
-                height={794}
-                alt="Recursos"
-              />
-            </div>
-          
           </div>
-          </div>
-
-          
 
           <div className="mt-20">
             <div>
