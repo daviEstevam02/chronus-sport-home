@@ -14,13 +14,13 @@ export default function Home() {
       <Header />
       <div className="w-full h-full pt-9 pb-52 bg-primary-darkest">
         <div className="container px-3 mx-auto my-0">
-          <div className="grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start">
-            <div className="col-span-2 lg:col-span-6">
-              <div className="flex flex-col mb-2 Title lg:mt-12">
-                <h1 className="font-bold text-md md:text-4xl lg:text-[48px] xl:text-[58px] text-gray-light">
+          <div className="relative grid justify-between grid-cols-4 lg:gap-5 section-1 lg:grid-cols-12 lg:items-start ">
+            <div className="col-span-2 lg:col-span-6 lg:mt-52 ">
+              <div className="flex flex-col mb-2">
+                <h1 className="font-black text-md md:text-4xl lg:text-[48px] xl:text-[58px] text-gray-light">
                   COLECIONÁVEIS
                 </h1>
-                <h2 className="text-sm font-bold md:text-4xl lg:text-[45px] md:mt-2  text-secondary-medium">
+                <h2 className="text-sm font-black md:text-4xl lg:text-[45px] md:mt-2  text-secondary-medium">
                   EXCLUSIVOS
                 </h2>
               </div>
@@ -42,18 +42,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative col-start-3 col-end-5 ml-2 lg:col-start-7 lg:col-end-13">
+            <div className="w-full h-full col-start-3 col-end-5 ml-2 max-h-52 lg:max-h-fit lg:col-start-7 lg:col-end-13">
               <Image
                 src="/images/principal-image.png"
-                width={1920}
-                height={1080}
+                width={563}
+                height={563}
                 alt="Imagem principal"
               />
             </div>
           </div>
 
           <div
-            className="mt-10 md:flex section-2 lg:gap-5 lg:grid-cols-12 lg:items-start"
+            className="mt-14 md:flex section-2 lg:items-start"
             style={{
               backgroundImage: 'url(/images/scount.png)',
               backgroundRepeat: 'no-repeat',
@@ -61,7 +61,7 @@ export default function Home() {
               backgroundSize: 'contain',
             }}
           >
-            <div className="relative w-full col-span-2 lg:">
+            <div>
               <Image
                 src="/images/scout-banner.png"
                 width={1920}
@@ -70,11 +70,11 @@ export default function Home() {
               />
             </div>
 
-            <div className="grid col-start-3 col-end-5 mt-2 ml-2 text-gray-light lg:col-start-7 lg:col-end-13">
-              <h2 className="font-extrabold md:text-4xl lg:text-6xl text-gray-light text-md md:max-w-[300px]">
+            <div className="text-gray-light md:mt-14">
+              <h2 className="font-extrabold md:text-4xl lg:text-6xl text-gray-light text-md">
                 SCOUT COMBINE
               </h2>
-              <p className="mt-2 text-base md:mt-6">
+              <p className="mt-2 text-sm md:mt-6 md:text-base">
                 Acompanhe o desempenho do seu atleta favorito, com NFTs
                 dinâmicos e adicione à sua Wallet os ativos digitais de cada
                 temporada. Invista e colecione a história. Comece agora, é
@@ -88,8 +88,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div
-            className="w-full mt-10 section-2"
+            className="w-full mt-14 section-2"
             style={{
               backgroundImage: 'url(/images/lancamentos-bg.svg)',
               backgroundRepeat: 'no-repeat',
@@ -119,7 +120,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="md:flex md:flex-col xl:max-w-[50%] xl:mt-14">
+              <div className="md:flex md:flex-col xl:max-w-[50%] xl:mt-10">
                 <div className="flex gap-5 md:gap-10">
                   <div className="">
                     <Image
@@ -134,7 +135,7 @@ export default function Home() {
                     <h3 className="font-black md:text-5xl text-secondary-medium">
                       SEJA UM ATLETA
                     </h3>
-                    <p className="mt-4 text-sm font-normal text-gray-light">
+                    <p className="mt-4 text-xs font-normal leading-5 md:text-base text-gray-light">
                       No CHRONUS Sports, seja você atleta amador ou
                       profissional, ao realizar o seu cadastro nós iremos
                       validar suas informações e categorizar o seu perfil dentro
@@ -158,7 +159,7 @@ export default function Home() {
                     <h3 className="font-black md:text-5xl text-secondary-medium">
                       SCOUT COMBINE
                     </h3>
-                    <p className="mt-4 text-sm font-normal text-gray-light">
+                    <p className="mt-4 text-xs font-normal leading-5 md:text-base text-gray-light">
                       NFT’s cheios de recursos para você colecionar, investir e
                       se destacar dentro do mercado desportivo.
                     </p>
@@ -179,7 +180,7 @@ export default function Home() {
                     <h3 className="font-black md:text-5xl text-secondary-medium">
                       CARTEIRA DIGITAL
                     </h3>
-                    <p className="mt-4 text-sm font-normal text-gray-light">
+                    <p className="mt-4 text-xs font-normal leading-5 md:text-base text-gray-light">
                       Crie sua Wallet de forma simples e rápida, sem vínculos
                       com CRIPTOMOEDAS e comece a investir nos melhores NFTs
                       esportivos do Mundo.
@@ -190,41 +191,46 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-20">
-            <div>
+          <div className="flex flex-col mt-20 md:mt-40 md:flex md:flex-row-reverse">
+            <div className="h-[183px] md:h-auto relative md:flex-grow md:basis-0">
               <Image
+                className="object-cover"
                 src="/images/pack-banner.png"
-                width={389}
-                height={183}
+                fill
                 alt="Pack card"
               />
             </div>
 
-            <div className="w-[280px]">
-              <h2 className="font-bold text-gray-light">
-                JÁ IMAGINOU{' '}
-                <span className="text-secondary-medium">GANHAR</span> VIAGENS E
-                DIVERSOS OUTROS PRÊMIOS?
-              </h2>
-            </div>
-            <div className="w-[358px] mt-2">
-              <p className="text-sm font-normal text-gray-light">
-                Uma enorme variedade de experiências atreladas aos NFTs
-                esportivos mais procurados. Compre colecionáveis raros e
-                participe.
-              </p>
-            </div>
+            <div className="w-full md:flex-grow md:flex md:flex-col md:basis-0">
+              <div className="w-[280px] md:w-full mt-3">
+                <p className="font-bold leading-10 text-gray-light md:text-5xl">
+                  JÁ IMAGINOU{' '}
+                  <span className="leading-10 text-secondary-medium">
+                    GANHAR VIAGENS
+                  </span>{' '}
+                  E DIVERSOS OUTROS PRÊMIOS?
+                </p>
+              </div>
+              <div className="w-[358px] mt-2">
+                <p className="text-sm font-normal text-gray-light">
+                  Uma enorme variedade de experiências atreladas aos NFTs
+                  esportivos mais procurados. Compre colecionáveis raros e
+                  participe.
+                </p>
+              </div>
 
-            <div className="flex items-center w-full mt-3 font-normal button-swap">
-              <Button className="px-6 py-2 gradient-4 min-w-[171px] text-gray-light rounded-2xl">
-                EXPLORE
-              </Button>
+              <div className="flex items-center w-full font-normal button-swap mt-7">
+                <Button className="px-6 py-2 gradient-4 min-w-[171px] text-gray-light rounded-2xl">
+                  EXPLORE
+                </Button>
 
-              <Button className="px-6 py-2 min-w-[171px] ml-2 bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
-                CADASTRE-SE
-              </Button>
+                <Button className="px-6 py-2 min-w-[171px] ml-2 bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+                  CADASTRE-SE
+                </Button>
+              </div>
             </div>
           </div>
+
           <div className="mt-40">
             <h2 className="mt-8 font-bold text-center text-gray-light">
               MODALIDADES
