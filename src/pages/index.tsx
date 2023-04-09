@@ -2,13 +2,46 @@ import { Header } from '../components/Header/Header'
 import { Inter, Outfit } from 'next/font/google'
 import Image from 'next/image'
 
+import FutsalIcon from '../../public/icons/futsal.svg'
+import BasketIcon from '../../public/icons/basquete.svg'
+import SoccerIcon from '../../public/icons/futebol.svg'
+import GymnasticsIcon from '../../public/icons/ginastica-olimpica.svg'
+import HandballIcon from '../../public/icons/handball.svg'
+import JudoIcon from '../../public/icons/judo.svg'
+import SynchronizedSwimmingIcon from '../../public/icons/nado-sincronizado.svg'
+import SwimmingIcon from '../../public/icons/natacao.svg'
+import WaterPoloIcon from '../../public/icons/polo-aquatico.svg'
+import OrnamentalJumpIcon from '../../public/icons/salto-ornamental.svg'
+import TennisIcon from '../../public/icons/tenis.svg'
+import TableTennisIcon from '../../public/icons/tenis-mesa.svg'
+import VolleyIcon from '../../public/icons/volei.svg'
+
 import Footer from '@/components/Footer'
+
+import { useKeenSlider } from 'keen-slider/react'
 
 import { Button } from '@/components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ['latin'] })
 
 export default function Home() {
+  const [modalidadesSliderRef, instanceRef] = useKeenSlider(
+    {
+      mode: 'free-snap',
+      slides: {
+        perView: 3,
+        origin: 'auto',
+        spacing: 25,
+      },
+      slideChanged() {
+        console.log('slide changed')
+      },
+    },
+    [
+      // add plugins here
+    ]
+  )
   return (
     <>
       <Header />
@@ -237,7 +270,146 @@ export default function Home() {
             <h2 className="mt-8 font-bold text-center text-gray-light">
               MODALIDADES
             </h2>
+
+            <div
+              ref={modalidadesSliderRef}
+              id="modalidades-slider"
+              className="relative flex items-center h-56 mt-8 keen-slider"
+            >
+              <div className="absolute blur-3xl w-48 bg-[#07749C9E] mx-14 h-80"></div>
+              <div className="relative flex items-center text-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={FutsalIcon}
+                  alt="Futsal image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Futsal
+                </p>
+              </div>
+              <div className="flex items-center text-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={BasketIcon}
+                  alt="Basquete image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Basquete
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={SoccerIcon}
+                  alt="Futsal image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Futebol
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={GymnasticsIcon}
+                  alt="Ginástica image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Ginástica Olimpica
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={HandballIcon}
+                  alt="Handball image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Handball
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={JudoIcon}
+                  alt="Judo image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Judo
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={SynchronizedSwimmingIcon}
+                  alt="Nado sincronizado image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Nado sincronizado
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={SwimmingIcon}
+                  alt="Futsal image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Natação
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={WaterPoloIcon}
+                  alt=" Polo aquático image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Polo aquático
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={OrnamentalJumpIcon}
+                  alt=" Salto ornamental image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Salto ornamental
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={TennisIcon}
+                  alt="Tenis image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Tenis
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={TableTennisIcon}
+                  alt="Tenis de mesa image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Tenis de mesa
+                </p>
+              </div>
+              <div className="flex items-center text-white keen-slider__slide">
+                <Image
+                  className="h-full max-h-[170px]"
+                  src={VolleyIcon}
+                  alt="Volei image"
+                />
+                <p className="absolute left-0 right-0 mx-auto my-auto text-white bottom-5">
+                  Volei
+                </p>
+              </div>
+            </div>
           </div>
+
           <div className="mt-24">
             <h2 className="mt-8 font-bold text-center text-gray-light">
               NEWSLETTER
