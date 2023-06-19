@@ -11,6 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'slide-bg': 'rgba(7, 116, 156, 0.62)',
         'button-transparent': 'rgba(255,255,255,0.15)',
         current: 'currentColor',
         primary: {
